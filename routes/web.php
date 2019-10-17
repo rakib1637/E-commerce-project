@@ -12,9 +12,14 @@
 */
 
 
-
-Route::get('/','allpagescontroller@index');
-
+//Homepage 
+Route::get('/','allpagescontroller@index')->name('index');
+//Login page
+Route::get('/login','allpagescontroller@login')->name('login');
+//Register page
+Route::get('/register','allpagescontroller@register')->name('register');
+//products page
+Route::get('/products','allpagescontroller@products')->name('products');
 
 
 
