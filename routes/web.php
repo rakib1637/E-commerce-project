@@ -20,6 +20,17 @@ Route::get('/login','allpagescontroller@login')->name('login');
 Route::get('/register','allpagescontroller@register')->name('register');
 //products page
 Route::get('/products','allpagescontroller@products')->name('products');
+//admin page route group
+Route::group(['prefix'=>'admin'], function(){
+
+	//Admin home Page
+	Route::get('/','AdminPageController@index')->name('index');
+	//Admin Create Product Page
+	Route::get('/product/createproduct','AdminPageController@createproduct')->name('createproduct');
+
+	Route::post('/prodcut/createproduct','AdminPageController@product_store')->name('admin.product.createproduct');
+
+});
 
 
 
