@@ -15,8 +15,12 @@
                   <h6 class="m-0 font-weight-bold text-primary">Upload The Product With Proper Information </h6>
                 </div>
                 <div class="card-body">
-	                  <form action="{{route('admin.product.createproduct')}}" method="POST">
-	                  	@csrf
+                	@include ('admin.allinfo.messages')
+                	<!--kon page a date show korbe ai ta-->
+	                  <form action="{{route('admin.product.createproduct')}}" method="POST"
+	                  enctype="multipart/form-data">
+	                  	<!--proti filed token akare jay-->
+	                  	{{csrf_field()}}
 	                  	<div class="form-group">
 	                  		<label for="title">Title</label>
 	                  		<input type="text" name="title" class="form-control" placeholder="Product Title">
@@ -25,7 +29,7 @@
 	                  		<label for="description">Description</label>
 	                  		<textarea type="text" name="description" class="form-control" placeholder="Product Description"></textarea> 
 	                  	</div>
-	                  	<form action="" method="POST">
+	                  
 	                  	<div class="form-group">
 	                  		<label for="quantity">Quantity</label>
 	                  		<input type="number" name="quantaty" class="form-control" placeholder="Product Quantity">
@@ -39,10 +43,14 @@
 	                  		<input type="number" name="offerprice" class="form-control" placeholder="Product Price">
 	                  	</div>
 	                  	<div class="form-group">
+	                  		<label for="product_image">Upload Product Image </label>
+	                  		<input type="file" name="product_image" class="">	                  		
+	                  	</div>
+	                  	<div class="form-group">
 	                  		<input type="submit" name="addproduct"  value="upload Product" class="btn btn-primary btn-block">
 	                  	</div>
 
-
+	                  	
 
 	                  </form>
                 </div>
