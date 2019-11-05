@@ -37,7 +37,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">All Products:</h6>
             <a class="collapse-item" href="{{route('createproduct')}}">Add new product</a>
-            <a class="collapse-item" href="cards.html">view all products</a>
+            <a class="collapse-item" href="{{route('manageproduct')}}">Manage All Products</a>
           </div>
         </div>
       </li>
