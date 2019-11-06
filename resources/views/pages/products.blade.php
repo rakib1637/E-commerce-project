@@ -73,9 +73,19 @@
           <div class="product-thumb">
               <div class="image product-imageblock">
 
-                <a href="product.html"> 
-                  <!--image show database theke -->
-                  <img src="{{asset('Forntend/image/'.$product->image->image)}}" alt="" title="lorem ippsum dolor dummy" class="img-responsive" /> 
+                <a href=""> 
+
+                 @php $i=1; @endphp
+                 @foreach($product->images as $image)
+                 @if ($i > 0)
+                  <img src="{{asset('Forntend/image/'.$image->image)}}" alt="" title="lorem ippsum dolor dummy" class="img-responsive" /> 
+                  @endif
+
+                  @php $i--; @endphp
+
+                  @endforeach
+                 
+
                </a>
 
 
@@ -96,7 +106,25 @@
                 {{$product->description}}
               </p>
               <!--Product Price-->
-              <p class="price product-price"><span class="price-old">{{$product->price}}</span>{{$product->offer_price}} </p>
+
+
+              <p class="price product-price">
+
+                  @if(is_null($product->offer_price))
+                    
+                      <span class="price-old"></span>
+                      {{$product->price}}
+
+                    
+                    @else
+                          <span class="price-old">{{$product->price}}</span>
+                          {{$product->offer_price}}
+                  
+                  @endif
+
+
+
+
                   <div class="rating"> 
                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
                      <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 

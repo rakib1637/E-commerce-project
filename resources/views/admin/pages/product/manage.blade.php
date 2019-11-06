@@ -6,6 +6,8 @@
          
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Manage All Product</h1>
+          <!--succes notification-->
+         
 
           <!-- Content Row -->
           <div class="row">
@@ -19,7 +21,7 @@
                 	<table class="table">
 						  <thead class="thead-dark table-striped">
 						    <tr>
-						      <th scope="col">#</th>
+						      <th scope="col">No.</th>
 						      <th scope="col">Product Title</th>
 						      <th scope="col">Price</th>
 						      <th scope="col">Quantaty</th>
@@ -41,8 +43,34 @@
 						      <td>
 						      		<div class="btn-group">
 						      			<a href="{{route('editproduct',$product->id)}}" class="btn btn-primary btn-sm">Update</a>
-						      			<a href="" class="btn btn-danger btn-sm">Delete</a>
-						      		</div>
+						      			<a href="{{$product->id}}" class="btn btn-danger btn-sm"  data-toggle="modal" data-target="#deleteproduct{{$product->id}}">Delete</a>
+
+						      			<!--Product Delte Modal Content Start -->
+							      		<div class="modal fade" id="deleteproduct{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog" admin.product.delete="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <h5 class="modal-title" id="exampleModalLabel">Did You Want to Delete The Product ?</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										      </div>
+										      <div class="modal-body">
+										        <form action="{{route('admin.product.delete',$product->id)}}" method="POST">
+										        	{{ csrf_field () }}
+										        	<button type="submit" class="btn btn-danger btn-block">Confrim Delete</button>
+										        </form>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-primary">Save changes</button>
+										      </div>
+										    </div>
+										  </div>
+										</div>
+										<!--Product Delete Modal Content End-->
+
+						      		</div>							      										
 						      </td>
 						    </tr>
 						    @php 

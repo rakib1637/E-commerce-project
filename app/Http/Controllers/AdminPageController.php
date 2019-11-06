@@ -127,7 +127,23 @@ class AdminPageController extends Controller
             $product_images->image=$img;
             $product_images->save();
         }*/
+        //succes notification
+        session()->flash('notif','Successfully Save Your Product');
         return redirect()->route('manageproduct');
     
-}
+    }
+
+
+
+    //Delete Product
+
+    public function product_delete ($id){
+        $product = product::find ($id);
+
+        $product->delete();
+        session()->flash('notif','Successfully Delete Your Prodect');
+        return back();
+    }
+
+
 }

@@ -28,6 +28,7 @@ Route::group(['prefix'=>'admin'], function(){
 	Route::get('/product/manage/edit/{id}','AdminPageController@edit_product')->name('editproduct');
 	Route::post('/prodcut/createproduct','AdminPageController@product_store')->name('admin.product.createproduct');
 	Route::post('/prodcut/edit/{id}','AdminPageController@product_update')->name('admin.product.update');
+	Route::post('/product/delete/{id}','AdminPageController@product_delete')->name('admin.product.delete');
 
 
 });
