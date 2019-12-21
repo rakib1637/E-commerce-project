@@ -33,7 +33,7 @@
                         <label for="parent_category">Parent Category</label>
                         
                         <select class="form-control" name="parent_id">
-                          <option>Please Select a Primary Category</option>
+                          <option value="">Please Select a Primary Category</option>
                           @foreach($primary_categories as $cat)
                           <option value="{{$cat->id}}" {{ $cat->id==$category->parent_id? 'selected' : '' }} > {{$cat->name}} </option>
                           @endforeach

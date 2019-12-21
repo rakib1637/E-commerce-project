@@ -1,3 +1,5 @@
+
+
 @extends('Backend.layouts.mastertemplate')
  @section('adminpagetemplate')
 <!-- Begin Page Content -->
@@ -45,6 +47,8 @@
 						    <tr>
 						      <th scope="col">No.</th>
 						      <th scope="col">Product Title</th>
+						      <th scope="col">Category</th>
+						      <th scope="col">Brands</th>
 						      <th scope="col">Price</th>
 						      <th scope="col">Quantaty</th>
 						      <th scope="col">Status</th>
@@ -59,6 +63,8 @@
 						    <tr>
 						      <th scope="row">{{$i}}</th>
 						      <td>{{$product->title}}</td>
+						      <td>{{$product->category->name}}</td>
+						      <td>{{$product->brand->name}}</td>
 						      <td>{{$product->price}}</td>
 						      <td>{{$product->quantaty}}</td>
 						      <td>{{$product->status}}</td>

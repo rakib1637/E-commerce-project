@@ -9,6 +9,7 @@ use Image;
 use File;
 use App\Models\productImage;
 use App\Models\category;
+use App\Models\brands;
 class ProductsController extends Controller
 {
     
@@ -42,6 +43,8 @@ class ProductsController extends Controller
         $products->quantaty     = $request->quantaty;
         $products->price        = $request->price;
         $products->offer_price  = $request->offerprice;
+        $products->category_id  =$request->category_id;
+        $products->brand_id     =$request->brand_id;
         $products->save();
         return redirect()->route('manageproduct');
     }
@@ -63,7 +66,8 @@ class ProductsController extends Controller
     	$products= new product;
 
         //create the product input data 
-    	$products->category_id         =1;
+    	$products->category_id         =$request->category_id;
+        $products->brand_id            =$request->brand_id;
     	$products->brand_id            =1;
         $products->title               =$request->title;
         $products->description         =$request->description;

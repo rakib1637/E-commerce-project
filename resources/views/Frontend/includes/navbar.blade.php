@@ -7,10 +7,10 @@
             <div class="language">
               <form action="#" method="post" enctype="multipart/form-data" id="language">
                 <div class="btn-group">
-                  <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="Forntend/image/flags/gb.png" alt="English" title="English">English <i class="fa fa-caret-down"></i></button>
+                  <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="{{asset('Forntend/image/flags/gb.png')}}" alt="English" title="English">English <i class="fa fa-caret-down"></i></button>
                   <ul class="dropdown-menu">
-                    <li><a href="#"><img src="Forntend/image/flags/lb.png" alt="Arabic" title="Arabic"> Arabic</a></li>
-                    <li><a href="#"><img src="Forntend/image/flags/gb.png" alt="English" title="English"> English</a></li>
+                    <li><a href="#"><img src="{{asset('Forntend/image/flags/lb.png')}}" alt="Arabic" title="Arabic"> Arabic</a></li>
+                    <li><a href="#"><img src="{{asset('Forntend/image/flags/gb.png')}}" alt="English" title="English"> English</a></li>
                   </ul>
                 </div>
               </form>
@@ -66,7 +66,7 @@
       </div>
       <div class="col-sm-4 col-xs-12 header-middle">
         <div class="header-middle-top">
-          <div id="logo"> <a href="{{route('homepage')}}"><img src="Forntend/image/logo.png" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
+          <div id="logo"> <a href="{{route('homepage')}}"><img src="{{asset('Forntend/image/logo.png')}}" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
         </div>
       </div>
       <div class="col-sm-4 col-xs-12 header-right">
@@ -78,7 +78,7 @@
               <table class="table table-striped">
                 <tbody>
                   <tr>
-                    <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" src="Forntend/image/product/7product50x59.jpg"></a></td>
+                    <td class="text-center"><a href="#"><img class="img-thumbnail" title="lorem ippsum dolor dummy" alt="lorem ippsum dolor dummy" src="{{asset('Forntend/image/product/7product50x59.jpg')}}"></a></td>
                     <td class="text-left"><a href="#">lorem ippsum dolor dummy</a></td>
                     <td class="text-right">x 1</td>
                     <td class="text-right">$254.00</td>

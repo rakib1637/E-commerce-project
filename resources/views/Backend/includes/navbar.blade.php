@@ -55,6 +55,23 @@
           </div>
         </div>
       </li>
+
+      <!--Start Brands Menu-->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#brands" aria-expanded="true" aria-controls="brands">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Brands</span>
+        </a>
+        <div id="brands" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">All Brands:</h6>
+            <a class="collapse-item" href="{{route('createbrand')}}">Add new Brands</a>
+            <a class="collapse-item" href="{{route('admin.brands')}}">Manage All Brands</a>
+          </div>
+        </div>
+      </li>
+      <!--End Brands Menu-->
+
       <!-- Divider -->
       <!--<hr class="sidebar-divider">-->
 

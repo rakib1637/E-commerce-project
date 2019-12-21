@@ -4,30 +4,30 @@
 <div class="container">
   <div class="mainbanner">
   <div id="main-banner" class="owl-carousel home-slider">
-    <div class="item"> <a href="#"><img src="Forntend/image/banners/Main-Banner1.jpg" alt="main-banner1" class="img-responsive" /></a> </div>
-    <div class="item"> <a href="#"><img src="Forntend/image/banners/Main-Banner2.jpg" alt="main-banner2" class="img-responsive" /></a> </div>
-    <div class="item"> <a href="#"><img src="Forntend/image/banners/Main-Banner3.jpg" alt="main-banner3" class="img-responsive" /></a> </div>
+    <div class="item"> <a href="#"><img src="{{asset('Forntend/image/banner-img/banner-1.png')}}" alt="main-banner1" class="img-responsive" /></a> </div>
+    <div class="item"> <a href="#"><img src="{{asset('Forntend/image/banner-img/banner-2.png')}}" alt="main-banner2" class="img-responsive" /></a> </div>
+    <div class="item"> <a href="#"><img src="{{asset('Forntend/image/banner-img/banner-3.png')}}" alt="main-banner3" class="img-responsive" /></a> </div>
   </div>
 </div>
 </div>
 <div class="container">
   <div class="row">  
     <div id="brand_carouse" class="owl-carousel brand-logo">
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand1.png" alt="Disney" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand2.png" alt="Dell" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand3.png" alt="Harley" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand4.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand5.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand6.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand7.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand8.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand9.png" alt="Canon" class="img-responsive" /></a> </div>
-        <div class="item text-center"> <a href="#"><img src="Forntend/image/brand/brand5.png" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand1.png')}}" alt="Disney" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand2.png')}}" alt="Dell" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand3.png')}}" alt="Harley" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand4.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand5.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand6.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand7.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand8.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand9.png')}}" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="{{asset('Forntend/image/brand/brand10.png')}}" alt="Canon" class="img-responsive" /></a> </div>
       </div>
     <div class="cms_banner ">
-      <div class="col-md-4 cms-banner-left"> <a href="#"><img alt="#" src="Forntend/image/banners/subbanner1.jpg"></a> </div>
-      <div class="col-md-4 cms-banner-middle"><a href="#"> <img alt="#" src="Forntend/image/banners/subbanner2.jpg"></a></div>
-      <div class="col-md-4 cms-banner-right"> <a href="#"><img alt="#" src="Forntend/image/banners/subbanner3.jpg"></a> </div>
+      <div class="col-md-4 cms-banner-left"> <a href="#"><img alt="#" src="{{asset('Forntend/image/banners/subbanner1.jpg')}}"></a> </div>
+      <div class="col-md-4 cms-banner-middle"><a href="#"> <img alt="#" src="{{asset('Forntend/image/banners/subbanner2.jpg')}}"></a></div>
+      <div class="col-md-4 cms-banner-right"> <a href="#"><img alt="#" src="{{asset('Forntend/image/banners/subbanner3.jpg')}}"></a> </div>
     </div>
   </div>
 
@@ -114,7 +114,7 @@
             <div id="special-slidertab" class="row owl-carousel product-slider">
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product4.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="asset{{('Forntend/image/product/product4.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -137,7 +137,7 @@
 
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product5.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="asset{{('Forntend/image/product/product5.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -161,7 +161,7 @@
 
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product5.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="asset{{('Forntend/image/product/product5.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -184,7 +184,7 @@
 
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product6.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="{{asset('Forntend/image/product/product6.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -207,7 +207,7 @@
 
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="#"> <img src="Forntend/image/product/product6.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="#"> <img src="{{asset('Forntend/image/product/product6.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -246,7 +246,7 @@
             <div id="bestseller-slidertab" class="row owl-carousel product-slider">
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="#"> <img src="Forntend/image/product/product7.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="#"> <img src="{{asset('Forntend/image/product/product7.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -266,7 +266,7 @@
               </div>
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product8.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="asset{{('Forntend/image/product/product8.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -286,7 +286,7 @@
               </div>
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product1.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="asset{{('Forntend/image/product/product1.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>
@@ -306,7 +306,7 @@
               </div>
               <div class="item">
                 <div class="product-thumb transition">
-                  <div class="image product-imageblock"> <a href="product.html"> <img src="Forntend/image/product/product2.jpg" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
+                  <div class="image product-imageblock"> <a href="product.html"> <img src="{{asset('Forntend/image/product/product2.jpg')}}" alt="lorem ippsum dolor dummy" title="lorem ippsum dolor dummy" class="img-responsive" /> </a>
                     <div class="button-group">
                       <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
                       <button type="button" class="addtocart-btn" >Add To Cart</button>

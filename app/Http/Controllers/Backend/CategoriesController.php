@@ -11,6 +11,7 @@ use App\Models\productImage;
 use App\Models\category;
 
 
+
 class CategoriesController extends Controller
 {
      //Add  New Category and parent category

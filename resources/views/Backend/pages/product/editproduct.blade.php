@@ -45,6 +45,30 @@
 	                  		<input type="number" name="offerprice" class="form-control" value="{{$product->offer_price}}">
 	                  	</div>
 
+	                  				                  	<div class="form-group">
+	                  		<label for="selectcategory">Select Category</label>
+	                  		<select class="form-control" name="category_id">
+	                  			<option value="">Please select a category for the product</option>
+	                  			@foreach(App\Models\category::orderby('id','asc')->where('parent_id', NULL)->get() as $parent)
+	                  			<option value="{{$parent->id}}">{{$parent->name}}</option>
+
+	                  			@foreach(App\Models\category::orderby('id','asc')->where('parent_id',$parent->id)->get() as $child)
+	                  			<option value="{{$child->id}}">-->{{$child->name}}</option>
+	                  			@endforeach
+	                  			@endforeach
+	                  		</select>
+	                  	</div>
+	                  	<div class="form-group">
+	                  		<label for="selectbrands">Select Brands</label>
+	                  		<select class="form-control" name="brand_id">
+	                  			<option value="">Please select a brand for the product</option>
+	                  			@foreach(App\Models\brands::orderby('name','asc')->get() as $brand)
+	                  			<option value="{{$brand->id}}">{{$brand->name}}</option>
+	                  			@endforeach
+
+	                  		</select>
+	                  	</div>
+
 	                  	<div class="form-group">
 	                  		<label for="product_image">Upload Product Image </label>
 	                  		<input type="file" name="product_image[]" class="">	                  		
