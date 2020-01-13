@@ -63,12 +63,12 @@ class ProductsController extends Controller
 
 
         //Create the product data model
-    	$products= new product;
+    	$products= new product ();
 
         //create the product input data 
     	$products->category_id         =$request->category_id;
         $products->brand_id            =$request->brand_id;
-    	$products->brand_id            =1;
+    	
         $products->title               =$request->title;
         $products->description         =$request->description;
     	$products->slug                =str_slug($products->title);

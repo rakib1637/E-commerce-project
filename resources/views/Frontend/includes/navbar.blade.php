@@ -124,7 +124,7 @@
         <div class="navbar-collapse">
           <ul class="main-navigation">
             <li><a href="{{route('homepage')}}"   class="parent"  >Home</a> </li>
-            <li><a href="{{route('products')}}"class="parent"  >Collection</a> </li>
+            <li><a href="{{route('products')}}"class="parent"  >All Products</a> </li>
             <li><a href="category.html"   class="parent"  >Women</a> </li>
             <li><a href="category.html"   class="parent"  >Men</a> </li>
             <li><a href="category.html"   class="parent"  >Accessories</a> </li>

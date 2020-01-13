@@ -7,27 +7,17 @@
 
           <ul class="box-category treeview-list treeview">
 
-            @foreach (App\Models\category::orderby('id','asc')->where('parent_id', NULL)->get() as $parent)
-              <li><a href="#" class="activSub">{{$parent->name}}</a>
-                @foreach (App\Models\category::orderby('id', 'asc')->where('parent_id',$parent->id)->get() as $child)
+            @foreach (App\Models\category::orderby('name','asc')->where('parent_id', NULL)->get() as $parent)
+              <li><a href="" class="activSub">{{ $parent->name }}</a>
+                @foreach (App\Models\category::orderby('name', 'asc')->where('parent_id',$parent->id)->get() as $child)
                <ul>
-                <li><a href="#">{{$child->name}}</a></li>
+                <li><a href="{{route('category.show',$child->id)}}">{{$child->name}}</a></li>
               </ul>
               @endforeach
             </li>
             @endforeach
 
-        <!--     
-             
-            </li>
-
-           
-            
-            <li><a href="#">Tablets</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Phones & PDAs</a></li>
-            <li><a href="#">Cameras</a></li>
-            <li><a href="#">MP3 Players</a></li> -->
+    
           </ul>
         </div>
       </div>

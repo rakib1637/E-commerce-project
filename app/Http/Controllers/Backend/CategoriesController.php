@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\category;
 use App\Models\product;
+use App\Models\productImage;
 use Image;
 use File;
-use App\Models\productImage;
-use App\Models\category;
+
+
 
 
 
@@ -17,8 +19,7 @@ class CategoriesController extends Controller
      //Add  New Category and parent category
 
     public function createcategory(){
-       $primary_categories=category::orderby('name','asc')->get();
-       return view ('Backend.pages.categories.createcategories',compact('primary_categories'));
+       $primary_categories=category::orderby('name','asc')->where('parent_id', NULL)->get();       return view ('Backend.pages.categories.createcategories',compact('primary_categories'));
     }
     //Manage Category
     public function managecategory(){

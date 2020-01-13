@@ -30,8 +30,17 @@ Route::get('/login','Frontend\pagecontroller@login')->name('login');
 //Register page
 Route::get('/register','Frontend\pagecontroller@register')->name('register');
 //products page
-Route::get('/products','Frontend\ProductsController@products')->name('products');
-Route::get('/products/{slug}','Frontend\ProductsController@show')->name('products.show');
+
+Route::group(['prefix' => 'products'], function (){
+	Route::get('/','Frontend\ProductsController@products')->name('products');
+	Route::get('/{slug}','Frontend\ProductsController@show')->name('products.show');
+	 Route::get('/categories','Frontend\CategoriesCotroller@index')->name('categories.index');
+    
+	Route::get('/category/{id}','Frontend\CategoriesController@show')->name('category.show');
+	 
+    
+	
+});
 
 
 
