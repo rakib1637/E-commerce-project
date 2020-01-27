@@ -70,7 +70,38 @@
           </div>
         </div>
       </li>
-      <!--End Brands Menu-->
+       <!--End Brands Menu-->
+      
+           <!--District Menu-->
+             <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#district" aria-expanded="true" aria-controls="district">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>District</span>
+        </a>
+        <div id="district" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">All District:</h6>
+            <a class="collapse-item" href="{{route('createdistricts')}}">Add new District</a>
+            <a class="collapse-item" href="{{route('admin.districts')}}">Manage All District</a>
+          </div>
+        </div>
+      </li>
+     <!-- End District Menu-->
+     <!--Division Menu-->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#divisions" aria-expanded="true" aria-controls="divisions">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Divisions</span>
+        </a>
+        <div id="divisions" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">All Divisions:</h6>
+            <a class="collapse-item" href="{{route('createdivisions')}}">Add new Divisions</a>
+            <a class="collapse-item" href="{{route('admin.divisions')}}">Manage All Divisions</a>
+          </div>
+        </div>
+      </li>
+     <!-- End Division Menu-->
 
       <!-- Divider -->
       <!--<hr class="sidebar-divider">-->

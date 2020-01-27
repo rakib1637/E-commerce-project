@@ -9,15 +9,15 @@ use App\Models\product;
 
 class pagecontroller extends Controller
 {
-    public function index(){
+    public function indexpages(){
     	$products=product::orderby('id','desc')->get();
     	return view ('Frontend.pages.index',compact('products'));
     }
-    public function login(){
-    	return view ('Frontend.pages.login');
-    }
-    public function register(){
-    	return view ('Frontend.pages.register');
-    }
+    // public function login(){
+    // 	return view ('Frontend.pages.login');
+    // }
+    // public function register(){
+    // 	return view ('Frontend.pages.register');
+    // }
     
 }
